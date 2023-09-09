@@ -8,12 +8,15 @@
 
 int main(void)
 {
-	int i;
+	int i, j;
 
-		for (i = 97 ; i < 123 ; i++)
+		for (i = '0' ; i <= '9' ; i++)
 		{
-			if (i != 'q' && i != 'e')
-				putchar(i);
+			putchar(i);
+		}
+		for (j = 'a' ; j <= 'f' ; j++)
+		{
+			putchar(j);
 		}
 	putchar('\n');
 	return (0);
