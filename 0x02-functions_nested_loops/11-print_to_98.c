@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
 * print_to_98 - function that from n to 89
-* @n: start number 
+* @n: start number
 * Return : Void
 */
 
