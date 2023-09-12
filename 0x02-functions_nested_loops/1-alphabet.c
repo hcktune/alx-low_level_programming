@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include "main.h"
 
 /*
  * print_alphabet: print all lowercase alphabet by order from 'a' ==> 'z' 
