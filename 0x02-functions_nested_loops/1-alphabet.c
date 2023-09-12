@@ -1,15 +1,19 @@
 #include <unistd.h>
-#include "main.h"
 
 /*
- * main - Entry point
+ * print_alphabet: print all lowercase alphabet by order from 'a' ==> 'z' 
  * 
- * Return: Always 0
+ * Output: abcdefghijqlmnopqrstuvwxyz
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
+	int i;
 
-	return (0);
+	for (i = 'a' ; i <= 'z' ; i++)
+	{
+		_putchar(i);
+	}
+
+	_putchar('\n');
 }
