@@ -1,8 +1,8 @@
 #include "main.h"
 
-/*
- * print_alphabet: print all lowercase alphabet by order from 'a' ==> 'z' 
- * 
+/**
+ * print_alphabet -  print all lowercase alphabet by order from 'a' ==> 'z'
+ *
  * Output: abcdefghijqlmnopqrstuvwxyz
  */
 
