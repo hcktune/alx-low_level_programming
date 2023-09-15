@@ -1,3 +1,3 @@
-int _putchar(char c);
-int _isupper(char c);
-int _isdigit(char n);
+int _putchar(char);
+int _isupper(char);
+int _isdigit(int);
