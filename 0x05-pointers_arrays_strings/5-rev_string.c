@@ -6,7 +6,7 @@
  * Retrun: void
  */
 
-void rev_string(char *s)
+void rev_string(char *str)
 {
 	char rev = s[0];
 	int len = 0;
