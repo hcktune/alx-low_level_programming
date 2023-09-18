@@ -4,3 +4,4 @@ void swap_int(int*, int*);
 int _strlen(char *str);
 void _puts(char *str);
 void print_rev(char *c);
+void rev_string(char *s);

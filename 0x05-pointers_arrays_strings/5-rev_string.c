@@ -2,11 +2,11 @@
 
 /**
  * rev_string - reverse the string provided
- * @str: string_provided
+ * @s: string_provided
  * Retrun: void
  */
 
-void rev_string(char *str)
+void rev_string(char *s)
 {
 	char rev = s[0];
 	int len = 0;
