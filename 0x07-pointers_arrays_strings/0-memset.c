@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * _memset - set constant values within memory
  * @s: starting address of memory to be filled
  * @b: const val
@@ -10,13 +10,12 @@
 
 char *_memset(char *s, char b, unsigned int n) 
 {
-	unsigned int i;
+	unsigned int i = 0;
 
-	i = 0;
-	for (; i < n; i++)
+	for (; n > 0; i++)
 	{
 		s[i] = b;
-		i++;
+		n--;
 	}
 	return (s);
 }
