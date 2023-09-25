@@ -4,7 +4,7 @@
  * _strchr - find a char within a string and print from that char
  * @s: string
  * @c: character that we need to find
- * Retrun: starting pointer
+ * Return: starting pointer
  */
 
 char *_strchr(char *s, char c)
