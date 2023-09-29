@@ -23,6 +23,9 @@ int recursive_prime_helper(int n, unsigned int i)
 	if (n < 0)
 		return (0);
 
+	else if (n == i)
+		return (1);
+
 	else if (n % i == 0)
 		return (0);
 
