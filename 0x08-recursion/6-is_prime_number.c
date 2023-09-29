@@ -8,12 +8,12 @@
 
 int is_prime_number(int n)
 {
-    if (n < 2)
-        return (0);  /* Numbers less than 2 are not prime */
-    else if (n == 2)
-        return (1);  /* 2 is prime */
-    else
-        return (recursive_prime_helper(n, 2));
+	if (n < 2)
+		return (0);
+	else if (n == 2)
+		return (1);
+	else
+		return (recursive_prime_helper(n, 2));
 }
 
 /**
@@ -25,12 +25,11 @@ int is_prime_number(int n)
 
 int recursive_prime_helper(int n, int i)
 {
-    if (i * i > n)
-        return (1);  
+	if ((i * i) > n)
+		return (1);
 
-    if (n % i == 0)
-        return (0); 
+	if ((n % i) == 0)
+		return (0);
 
-    return (recursive_prime_helper(n, i + 1));  
+	return (recursive_prime_helper(n, i + 1));
 }
-
