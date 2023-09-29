@@ -8,7 +8,7 @@
 
 int is_prime_number(int n)
 {
-	return (recursive_helper(n, 2));
+	return (recursive_prime_helper(n, 2));
 }
 
 /**
@@ -26,5 +26,5 @@ int recursive_prime_helper(int n, unsigned int i)
 	else if (n % i == 0)
 		return (0);
 
-	return (recursive_helper(n, i++));
+	return (recursive_prime_helper(n, i++));
 }
