@@ -18,7 +18,7 @@ int is_prime_number(int n)
  * Return: 1 if prime, 0 if not found
  */
 
-int recursive_prime_helper(int n, unsigned int i)
+int recursive_prime_helper(int n, int i)
 {
 	if (n < 0)
 		return (0);
