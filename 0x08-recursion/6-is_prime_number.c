@@ -9,9 +9,9 @@
 int is_prime_number(int n)
 {
     if (n < 2)
-        return (0);  // Numbers less than 2 are not prime
+        return (0);  /* Numbers less than 2 are not prime */
     else if (n == 2)
-        return (1);  // 2 is prime
+        return (1);  /* 2 is prime */
     else
         return (recursive_prime_helper(n, 2));
 }
@@ -26,11 +26,11 @@ int is_prime_number(int n)
 int recursive_prime_helper(int n, int i)
 {
     if (i * i > n)
-        return (1);  // We've checked up to the square root of n, so it's prime
+        return (1);  
 
     if (n % i == 0)
-        return (0);  // n is divisible by i, so it's not prime
+        return (0); 
 
-    return (recursive_prime_helper(n, i + 1));  // Check the next divisor
+    return (recursive_prime_helper(n, i + 1));  
 }
 
