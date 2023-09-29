@@ -1,33 +1,36 @@
 #include "main.h"
 
 /**
- * is_prime_number - Find the prime number using recursive
- * @n: number to find
- * Return: 1 if prime, 0 if not found
+ * is_prime_number - Find if a number is prime using recursion
+ * @n: Number to check
+ * Return: 1 if prime, 0 if not prime
  */
 
 int is_prime_number(int n)
 {
-	return (recursive_prime_helper(n, 2));
+    if (n < 2)
+        return (0);  // Numbers less than 2 are not prime
+    else if (n == 2)
+        return (1);  // 2 is prime
+    else
+        return (recursive_prime_helper(n, 2));
 }
 
 /**
- * recursive_prime_helper - Find the prime number
- * @n: number to find
- * @i: number of iteration
- * Return: 1 if prime, 0 if not found
+ * recursive_prime_helper - Helper function to check for prime recursively
+ * @n: Number to check for primality
+ * @i: Current divisor to check
+ * Return: 1 if prime, 0 if not prime
  */
 
 int recursive_prime_helper(int n, int i)
 {
-	if (n < 0)
-		return (0);
+    if (i * i > n)
+        return (1);  // We've checked up to the square root of n, so it's prime
 
-	else if (n == i)
-		return (1);
+    if (n % i == 0)
+        return (0);  // n is divisible by i, so it's not prime
 
-	else if (n % i == 0)
-		return (0);
-
-	return (recursive_prime_helper(n, i++));
+    return (recursive_prime_helper(n, i + 1));  // Check the next divisor
 }
+
