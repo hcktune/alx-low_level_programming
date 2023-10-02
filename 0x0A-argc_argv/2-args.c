@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	int c_arg; /* current_argument */
 
-	for (c_arg = 0; in < argc; c_arg++)
+	for (c_arg = 0; c_arg < argc; c_arg++)
 	{
 		printf("%s\n", argv[c_arg]);
 	}
