@@ -1,56 +1,33 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
- * alloc_grid - malloc 2D grid of int
- * @w: array's width (number of columns)
- * @h: array's height (number of rows)
- * Return: pointer to the 2D array
- */
+* alloc_grid - malloc 2d grid of int
+* @w: array's width
+* @h: arrays's height
+* Return: ptr
+*/
+
 
 int **alloc_grid(int w, int h)
 {
-	if (check(w, h) == 0)
-	{
+	int **arr;
+
+	int j, i;
+
+	if (w <= 0 || h <= 0)
 		return (NULL);
-	}
-    int **arr;
-	arr = (int **)malloc(sizeof(int *) * h);
-    if (arr == NULL)
-	{
+
+	arr = (int **)malloc(h * sizeof(int *));
+	if (arr == NULL)
 		return (NULL);
-	}
-	int i, j;
-	for (i = 0; i < h; i++)
+	for (j = 0; j < h; j++)
 	{
-		arr[i] = (int *)malloc(sizeof(int) * w);
-
-		if (arr[i] == NULL)
-		{
-			for (j = 0; j < i; j++)
-			{
-				free(arr[j]);
-			}
-            free(arr);
-			return (NULL);
-        }
-
-        for (j = 0; j < w; j++)
-		{
-			arr[i][j] = 0;
- 		}
+		arr[j] = (int *)malloc(w * sizeof(int));
 	}
-
-	return arr;
-}
-
-int check(int w, int h)
+	for (j = 0; j < h; j++)
+	{
+		for (i = 0; i < w; i++)
+			arr[j][i] = 0;
+	}
+	return (arr);	
 {
-    if (w <= 0 || h <= 0)
-	{
-		return (0);
-    }
-	return (1);
-}
-
