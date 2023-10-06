@@ -12,7 +12,7 @@ void *malloc_checked(unsigned int s)
 	
 	p = malloc(s);
 	
-	if (p == NULL || s >= INT_MAX)
+	if (p == NULL)
 		exit(98);
 
 	return (p);
