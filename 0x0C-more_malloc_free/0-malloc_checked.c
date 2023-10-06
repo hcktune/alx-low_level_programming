@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * malloc_checked - check for any failure of malloc func
  * @s: size of memory (bytes)
