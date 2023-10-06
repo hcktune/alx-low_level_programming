@@ -5,5 +5,5 @@
 #include <limits.h>
 
 void *malloc_checked(unsigned int s);
-
+char *string_nconcat(char *str1, char *str2);
 #endif /* MAIN_H */
