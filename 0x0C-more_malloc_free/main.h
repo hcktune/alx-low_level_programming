@@ -6,4 +6,5 @@
 
 void *malloc_checked(unsigned int s);
 char *string_nconcat(char *str1, char *str2, unsigned int n);
+void *_calloc(unsigned int nmemb, unsigned int size);
 #endif /* MAIN_H */
