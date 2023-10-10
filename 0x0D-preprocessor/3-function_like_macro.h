@@ -1,4 +1,4 @@
-#ifndef ABS
+#ifndef ABS_H
 
 #define ABS(n) ((n) < 0 ? -(n) : (n))
 
