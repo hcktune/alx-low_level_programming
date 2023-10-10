@@ -1,5 +1,5 @@
 #ifndef ABS
 
-#define ABS(N) ((N) < 0 ? -(N) : (N))
+#define ABS(n) ((n) < 0 ? -(n) : (n))
 
 #endif /* ABS */
