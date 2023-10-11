@@ -8,7 +8,7 @@
  * Return: Int
 */
 
-void int_index(int *array, size_t size, int (*cmp)(int))
+int int_index(int *array, size_t size, int (*cmp)(int))
 {
 	if (size <= 0 || cmp == NULL || array == ((*void)0))
 		return (-1);
