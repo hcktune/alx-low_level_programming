@@ -2,9 +2,9 @@
 
 /**
  * array_iterator - array of pointers points to function to execute it
- * @array: ptr 
+ * @array: ptr
  * @size: arr's size
- * @action: execution 
+ * @action: execution
 */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
