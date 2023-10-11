@@ -10,11 +10,11 @@
 
 int int_index(int *array, size_t size, int (*cmp)(int))
 {
+	int i;
+
 	if (size <= 0 || cmp == NULL || array == ((*void)0))
 		return (-1);
 	
-	int i;
-
 	for (i = 0; i < size; i++)
 	{
 		if (cmp(array[i])
