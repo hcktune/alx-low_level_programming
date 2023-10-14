@@ -9,6 +9,7 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int res = 0;
+	unsigned int i = 0;
 	va_list nbs; /* numbers */
 
 	if (n == 0)
