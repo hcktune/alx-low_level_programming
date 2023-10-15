@@ -19,9 +19,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		res = va_arg(string, char *);
 
 		if (res != NULL)
-			printf("%s",res);
+			printf("%s", res);
 
-		else if (res == NULL)
+		else
 			printf("(nil)");
 		/* end if */
 
