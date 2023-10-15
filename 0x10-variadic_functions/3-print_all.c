@@ -33,6 +33,7 @@ void print_all(const char * const format, ...)
 					printf("%s%s", separator, va_arg(spec, char *);
 					break;
 				default:
+					i++;
 					continue;
 			}
 			sep = ", ";
