@@ -30,7 +30,9 @@ void print_all(const char * const format, ...)
 					printf("%s%f", separator, va_arg(spec, double);
 					break;
 				case 's':
-					printf("%s%s", separator, va_arg(spec, char *);
+					str_spec = va_arg(spec, char *);
+					if (str_spec == NULL)
+						printf("%s%s", separator, str_spec);
 					break;
 				default:
 					i++;
