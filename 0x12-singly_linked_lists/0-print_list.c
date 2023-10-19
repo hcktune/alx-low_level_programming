@@ -1,15 +1,13 @@
 #include "lists.h"
-
 /**
- * print_list - print the all nodes with given a list
- * @h: list_t conttains nodes
- * Return: first node
- */
-
+ * print_list - length of the list
+ * @h: pointer to the structure
+ * Return: the length of the list
+*/
 size_t print_list(const list_t *h)
 {
-	const list_t *p = h;
-	size_t len = 0;
+const list_t *p = h;
+size_t l = 0;
 
 	while (p != NULL)
 	{
@@ -17,8 +15,8 @@ size_t print_list(const list_t *h)
 			printf("[0] (nil)\n");
 		else
 			printf("[%u] %s\n", p->len, p->str);
-		len++;
+		l++;
 		p = p->next;
 	}
-	return (len);
+	return (l);
 }
