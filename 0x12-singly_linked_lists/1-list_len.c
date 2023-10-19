@@ -3,7 +3,7 @@
 /**
  * list_len - length of lists's struct
  * @h: head
- * Return: len 
+ * Return: len
 */
 
 size_t list_len(const list_t *h)
