@@ -6,7 +6,7 @@
  * Return: first node
  */
 
-size_t print_list(const size_t *h)
+size_t print_list(const list_t *h)
 {
 	const list_t *p = h;
 	size_t len = 0;
