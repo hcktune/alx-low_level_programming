@@ -23,5 +23,5 @@ int pop_listint(listint_t **head)
 	node->next = NULL;
 	free(node);
 
-	return (value);
+	return (val);
 }
