@@ -1,10 +1,10 @@
 #include "lists.h"
 
-/*
- * print_listint - print all values of the list, output the length
+/**
+ * print_listint - print all values of the list and output the length
  * @h: ptr to the head
  * Return: number of nodes
- **/
+ */
 
 size_t print_listint(const listint_t *h)
 {
