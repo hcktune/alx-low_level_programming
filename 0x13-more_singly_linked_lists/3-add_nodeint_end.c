@@ -2,9 +2,9 @@
 
 /**
  * add_nodeint_end - Adds a new node to end of list
- * @head: ptr to pointer 
+ * @head: ptr to pointer
  * @n: Int
- * Return: new node 
+ * Return: new node
  */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
@@ -15,7 +15,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		return (NULL);
 
 	node = malloc(sizeof(listint_t));
-	
+
 	if (!node)
 		return (NULL);
 
@@ -33,6 +33,6 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
 		new_node->next = node;
 	}
-	
+
 	return (node);
 }
