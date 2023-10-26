@@ -2,7 +2,7 @@
 
 /**
  * get_bit - get bit from int with index into
- * @n: number in 
+ * @n: number in
  * @index: index bit
  * Return: bit
 */
