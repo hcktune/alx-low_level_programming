@@ -19,7 +19,8 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 
 		res = res << 1;
-		res = res | (*b++ - 48);
+		res = res | (*b - 48);
+		b++;
 	}
 	return (res);
 }
